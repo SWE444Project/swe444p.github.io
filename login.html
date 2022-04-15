@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In</title>
+   
+    <!--css-->
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <!--//css-->
+   
+</head>
+<body>
+
+<!--banner-->
+<div class="top nav">
+<nav class="navbar navbar-default"  style="background:#000;">
+  <div class="container">
+    <div class="navbar-header">
+        <a class="navbar-brand">Directory of restaurants in Riyadh</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" class="page-scroll" >Home</a></li>
+	    <li><a href="Login.html" class="active">Sign In</a></li>
+
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+<!--locations-->
+<div class="locations-w3-agile" id="locations">
+	<div class="locations-w3-agile-info text-center">
+        <h3>Sign In </h3>
+		<label></label>
+	</div>
+
+
+
+  <div id="login">
+
+	  <div class="login">    
+    <form id="login" >    
+        <label>    <b>User name </b>   </label>    
+
+
+        <input type="text" name="Uname" id="Uname" placeholder="User Name">    
+
+        <br><br>    
+        <label><b>Password      </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="button" name="log" onclick="check(this.form)" id="log" value="Log In">       
+        <br><br>    
+
+    </form>     
+
+	
+
+</div>    
+</div>    
+
+	<script language="javascript">
+function check(form)      /*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.Uname.value == "Users" && form.Pass.value == "123")
+  {
+  alert("Correct Password and Username")
+    window.open('index.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+
+				
+         
+			
+			
+			<div class="clearfix"></div>
+			
+			</div>
+
+<div class="footer text-center"> 2022 Resturant. Design by Rawan </div>
+
+
+</body>
+</html>
